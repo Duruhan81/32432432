@@ -1,0 +1,12 @@
+import random
+while True:
+    characters = "+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+    harfler = "abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    sayılar = "1234567890"
+    semboller = "+-/*!&$#?=@"
+    sifre_uzunluk = int(input("Parola uzunluğunu girin: "))
+    generated_sifre = ""
+    for sifre_uzunluk in range(sifre_uzunluk):
+        generated_sifre += random.choice(characters)
+
+    print("Oluşturulan Parola:", generated_sifre)
